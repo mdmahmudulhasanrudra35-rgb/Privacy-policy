@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ISP Network Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 1rem;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            background: white;
+            color: #1a2980;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo-text h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .privacy-badge {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 50px;
+            padding: 8px 20px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        
+        main {
+            padding: 3rem 0;
+        }
+        
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+        
+        .privacy-header {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        
+        .privacy-header h2 {
+            color: #1a2980;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        
+        .no-data-section {
+            background-color: #e8f7ef;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            border-left: 5px solid #4CAF50;
+        }
+        
+        .no-data-icon {
+            font-size: 3rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        
+        .no-data-section h3 {
+            color: #2e7d32;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .policy-section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .policy-section:last-child {
+            border-bottom: none;
+        }
+        
+        .policy-section h3 {
+            color: #1a2980;
+            margin-bottom: 1rem;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .policy-section p {
+            margin-bottom: 1rem;
+            color: #444;
+            font-size: 1.05rem;
+        }
+        
+        .policy-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .policy-section li {
+            margin-bottom: 0.8rem;
+            color: #444;
+            font-size: 1.05rem;
+        }
+        
+        .highlight-box {
+            background-color: #f0f8ff;
+            border-left: 4px solid #1a2980;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .permission-info {
+            background-color: #fff8e1;
+            border-left: 4px solid #ff9800;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .app-purpose {
+            background-color: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-info {
+            background-color: #e8f4fc;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .contact-info h4 {
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            background-color: #1a2980;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .privacy-content {
+                padding: 2rem;
+                margin: 0 10px;
+            }
+            
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .privacy-header h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ISP Network Tool</h1>
+                        <p>Optimize ISP performance with bandwidth planning, BDIX testing, and ping tools.</p>
+                    </div>
+                </div>
+                <div class="privacy-badge">No Data Collection • Privacy First</div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="privacy-content">
+                <div class="privacy-header">
+                    <h2>Privacy Policy</h2>
+                    <p class="last-updated">Last Updated: February 7, 2026</p>
+                    <p>This Privacy Policy explains how ISP Network Tool ("the App") handles user information.</p>
+                </div>
+                
+                <div class="no-data-section">
+                    <div class="no-data-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M9 12l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3>No Data Collection</h3>
+                    <p>ISP Network Tool is designed as a <strong>user-centric educational application</strong> that does <strong>NOT collect, store, or transmit</strong> any personal information, usage data, or analytics.</p>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Our Privacy Commitment</h3>
+                    <p>ISP Network Tool is built with privacy as a core principle. We believe in providing valuable networking tools without compromising user privacy.</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Important:</strong> This application does not collect, store, or transmit any personal data, usage statistics, or analytics. All network testing and calculations happen locally on your device.</p>
+                    </div>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>What We Don't Do</h3>
+                    <ul>
+                        <li>We do <strong>NOT collect</strong> any personal information</li>
+                        <li>We do <strong>NOT track</strong> user activity or behavior</li>
+                        <li>We do <strong>NOT save</strong> any data from the application</li>
+                        <li>We do <strong>NOT sell</strong> anything (the app is free)</li>
+                        <li>We do <strong>NOT use</strong> analytics or tracking services</li>
+                        <li>We do <strong>NOT transmit</strong> any data to external servers</li>
+                    </ul>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Internet Permission</h3>
+                    <div class="permission-info">
+                        <p>The app requires INTERNET permission solely for:</p>
+                        <ul>
+                            <li>Fetching and displaying your public IP address</li>
+                            <li>Performing network tests (ping, latency, BDIX connectivity)</li>
+                            <li>Accessing network information for educational purposes</li>
+                        </ul>
+                        <p><strong>Important:</strong> These network operations happen in real-time and no results are stored or transmitted externally.</p>
+                    </div>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Application Purpose</h3>
+                    <div class="app-purpose">
+                        <p>ISP Network Tool is designed as an <strong>educational tool</strong> for:</p>
+                        <ul>
+                            <li>Teaching networking concepts to newcomers</li>
+                            <li>Demonstrating routing principles</li>
+                            <li>Making network engineering interesting and accessible</li>
+                            <li>Providing practical ISP tools (bandwidth planning, BDIX testing, ping tools)</li>
+                        </ul>
+                        <p>All calculations, tests, and results remain on your device and are not shared with anyone.</p>
+                    </div>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Local Processing Only</h3>
+                    <p>All features of ISP Network Tool work through local processing on your device:</p>
+                    <ul>
+                        <li><strong>Bandwidth Capacity Planning:</strong> Calculations are performed locally based on your inputs</li>
+                        <li><strong>BDIX Dashboard:</strong> Connectivity tests run in real-time with no data storage</li>
+                        <li><strong>Ping & Latency Tools:</strong> Results are displayed immediately and not saved</li>
+                        <li><strong>Advanced Analytics:</strong> All calculations happen on your device</li>
+                    </ul>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Third-Party Services</h3>
+                    <p>ISP Network Tool does not integrate with any third-party services that collect user data. The app is completely standalone.</p>
+                </div>
+                
+                <div class="policy-section">
+                    <h3>Changes to This Policy</h3>
+                    <p>If we ever make changes to this privacy policy (such as adding optional features), we will clearly notify users and update this page with a new "Last Updated" date.</p>
+                    <p>Our commitment to privacy means we would never silently add data collection features.</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h4>Contact Us</h4>
+                    <p>If you have any questions about this privacy policy or our privacy practices, please contact us:</p>
+                    <p><strong>Email:</strong> mahmudulhasanrudra@gmail.com</p>
+                    <p>We're happy to clarify our no-data-collection approach and explain how the app works.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2026 ISP Network Tool. All rights reserved.</p>
+                    <p>A privacy-first educational application for network engineers</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
